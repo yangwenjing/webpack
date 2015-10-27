@@ -1,3 +1,5 @@
+var HelloWorldPlugin = require("./hello-world.js");
+
 module.exports = {
   entry: {
 		js: './main.js',
@@ -20,5 +22,9 @@ module.exports = {
   resolve: {
     // 现在可以写 require('file') 代替 require('file.coffee')
     extensions: ['', '.js', '.json', '.coffee'] 
-  }
+  },
+  plugins: [
+    new HelloWorldPlugin({options:true})
+  ]
+
 };
