@@ -9,4 +9,4 @@ MyPlugin.prototype.apply = function (compiler) {
     //now you have access to all the compiler instance methods
 }
 module.exports = MyPlugin;
-'''
+```
